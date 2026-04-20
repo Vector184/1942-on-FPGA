@@ -233,7 +233,7 @@
           "abstraction_type": "xilinx.com:interface:bram_rtl:1.0",
           "mode": "slave",
           "parameters": {
-            "MEM_SIZE": [ { "value": "131072", "value_src": "ip_propagated", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "MEM_SIZE": [ { "value": "32768", "value_src": "ip_propagated", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "MEM_WIDTH": [ { "value": "32", "value_src": "ip_propagated", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "MEM_ECC": [ { "value": "NONE", "value_src": "ip_propagated", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
             "MASTER_TYPE": [ { "value": "BRAM_CTRL", "value_src": "user", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],

@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "mb_block2_axi_timer_0_0",
-    "cell_name": "axi_timer_0",
+    "cell_name": "timer_usb_axi",
     "component_reference": "xilinx.com:ip:axi_timer:2.0",
     "ip_revision": "29",
     "gen_directory": "../../../../../../Final_Project.gen/sources_1/bd/mb_block2/ip/mb_block2_axi_timer_0_0",
