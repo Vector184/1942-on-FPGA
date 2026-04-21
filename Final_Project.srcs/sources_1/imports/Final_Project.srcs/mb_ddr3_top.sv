@@ -23,7 +23,14 @@ module mb_ddr3_top
     output logic ddr3_we_n,
     input logic reset_rtl_0,
     input logic uart_rxd,
-    output logic uart_txd);
+    output logic uart_txd,
+    input usb_spi_miso,
+    output usb_spi_mosi,
+    output usb_spi_sclk,
+    output [0:0]usb_spi_ss,
+    input [0:0]gpio_usb_int_tri_i,
+    output [0:0]gpio_usb_rst_tri_o
+  );
 
 
   mb_block2 mb_ddr3_i
@@ -45,5 +52,12 @@ module mb_ddr3_top
         .ddr3_we_n(ddr3_we_n),
         .reset_rtl_0(~reset_rtl_0),
         .uart_rxd(uart_rxd),
-        .uart_txd(uart_txd));
+        .uart_txd(uart_txd),
+        .usb_spi_miso(usb_spi_miso),
+        .usb_spi_mosi(usb_spi_mosi),
+        .usb_spi_sclk(usb_spi_sclk),
+        .usb_spi_ss(usb_spi_ss),
+        .gpio_usb_int_tri_i(gpio_usb_int_tri_i),
+        .gpio_usb_rst_tri_o(gpio_usb_rst_tri_o)
+        );
 endmodule

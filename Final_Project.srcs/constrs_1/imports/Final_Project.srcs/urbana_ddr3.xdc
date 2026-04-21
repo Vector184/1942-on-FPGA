@@ -339,4 +339,16 @@ set_property PACKAGE_PIN T4 [get_ports {ddr3_ck_n[0]}]
 
 set_property INTERNAL_VREF 0.675 [get_iobanks 34]
 
+set_property PACKAGE_PIN T12 [get_ports usb_spi_ss]
+set_property IOSTANDARD LVCMOS33 [get_ports usb_spi_ss]
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_usb_int_tri_i[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports usb_spi_miso]
+set_property IOSTANDARD LVCMOS33 [get_ports usb_spi_mosi]
+set_property IOSTANDARD LVCMOS33 [get_ports usb_spi_sclk]
+set_property PACKAGE_PIN T13 [get_ports {gpio_usb_int_tri_i[0]}]
+set_property PACKAGE_PIN V14 [get_ports usb_spi_sclk]
+set_property PACKAGE_PIN V15 [get_ports usb_spi_mosi]
+set_property PACKAGE_PIN U12 [get_ports usb_spi_miso]
+set_property IOSTANDARD LVCMOS33 [get_ports gpio_usb_rst_tri_o]
+set_property PACKAGE_PIN V13 [get_ports gpio_usb_rst_tri_o]
 
