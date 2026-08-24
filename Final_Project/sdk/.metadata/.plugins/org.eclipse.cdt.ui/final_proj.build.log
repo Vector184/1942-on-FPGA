@@ -1,0 +1,28 @@
+12:31:46 **** Incremental Build of configuration Debug for project final_proj ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Users/kakkar3/Desktop/Final_Project/sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:292:13: warning: 'addr' defined but not used [-Wunused-variable]
+  292 | static BYTE addr = 1;
+      |             ^~~~
+In file included from ../src/helloworld.c:7:
+C:/Users/kakkar3/Desktop/Final_Project/sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bspinclude/include/hdmi_text_controller.h:110:42: warning: 'hdmi_ctrl' defined but not used [-Wunused-variable]
+  110 | static volatile struct HDMI_TEXT_STRUCT* hdmi_ctrl = (volatile struct HDMI_TEXT_STRUCT*)XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR;
+      |                                          ^~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: final_proj.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/kakkar3/Desktop/Final_Project/sdk/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "final_proj.elf"  ./src/lw_usb/HID.o ./src/lw_usb/MAX3421E.o ./src/lw_usb/transfer.o  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: final_proj.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size final_proj.elf  |tee "final_proj.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47804	    496	   1948	  50248	   c448	final_proj.elf
+'Finished building: final_proj.elf.size'
+' '
+
+12:31:48 Build Finished (took 1s.583ms)
+
